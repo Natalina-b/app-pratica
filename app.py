@@ -28,8 +28,8 @@ if dados:
       return pd.DataFrame()
       df = carregar_dados(dados)
       st.table(df)
-  else:
-      st.info("Carregue um ficheiro excel para começar")
+else:
+    st.info("Carregue um ficheiro excel para começar")
 if menu== "Inicio":
    with st.expander("** Sobre o Istituto Nacional de Estatística"):
         st.write("ACESSE O SITE WW.INE.CV")
