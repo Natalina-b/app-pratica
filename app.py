@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import time
 st.title("Introduzindo os elimentes de streamlit")
-menu= option_menu(menu_title="Menu",
+menu = option_menu(menu_title="Menu",
                  options=["Inicio", "Gráfico", "Estatísticas", "Gráficos dinâmicos", "Widgets","Formulário"],
                  icons=["bar-chart", "bar-chart-line", "toogles", "bar-chart"],
                  menu_icon="cast",
