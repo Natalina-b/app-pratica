@@ -13,12 +13,12 @@ menu = option_menu(menu_title="Menu",
                  orientation="horinzantal"
 
                  )
-with st.sidebar:
-  st.sucess("**UPLOAD DE DADOS")
+ with st.sidebar:
+      st.sucess("**UPLOAD DE DADOS**")
 dados = st.file_uploader(
   "CAREGA O FICHEIRO",
   type=["xlsx", "xls"]
-)
+    )
 if dados:
   def carregar_dados(dados):
     try:
@@ -28,12 +28,12 @@ if dados:
       return pd.DataFrame()
       df = carregar_dados(dados)
       st.table(df)
-else:
+   else:
     st.info("Carregue um ficheiro excel para começar")
 if menu== "Inicio":
-  with st.expander("** Sobre o Istituto Nacional de Estatística"):
-      st.write("ACESSE O SITE WW.INE.CV")
-      st.image("INE.png")
+   with st.expander("** Sobre o Istituto Nacional de Estatística"):
+        st.write("ACESSE O SITE WW.INE.CV")
+        st.image("INE.png")
       
 if menu == "widgets":
   bt = st.button("Dê um clique")
