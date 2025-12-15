@@ -11,7 +11,7 @@ menu = option_menu(menu_title="Menu",
                  icons=["bar-chart", "bar-chart-line", "toogles", "bar-chart"],
                  menu_icon="cast",
                  default_index=0,
-                 orientation="horinzantal"
+                 orientation="horizontal"
                  )
 
 with st.sidebar:
@@ -28,6 +28,7 @@ if dados:
       return df
     except FileNotFaundErro:
       return pd.DataFrame()
+      
       df = carregar_dados(dados)
       st.table(df)
 else:
