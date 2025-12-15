@@ -21,19 +21,19 @@ with st.sidebar:
     type=["xlsx", "xls"]
     )
 
-if dados:
-  def carregar_dados(dados):
-    try:
-      df = pd.read_excel(dados)
-      return df
-    except FileNotFoundError:
-      return pd.DataFrame()
-    df = carregar_dados(dados)
-    st.table(df)
-    
+  if dados:
+    def carregar_dados(dados):
+      try:
+        df = pd.read_excel(dados)
+        return df
+      except FileNotFoundError:
+        return pd.DataFrame()
+      df = carregar_dados(dados)
+      st.table(df)
       
-else:
-    st.info("Carregue um ficheiro excel para começar")
+        
+  else:
+      st.info("Carregue um ficheiro excel para começar")
  
 if menu == "Inicio":
   with st.expander("**Sobre o Istituto Nacional de Estatística**"):
