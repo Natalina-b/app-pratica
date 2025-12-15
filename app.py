@@ -26,7 +26,7 @@ if dados:
       try:
         df = pd.read_excel(dados)
         return df
-    except FileNotFoundError:
+      except FileNotFoundError:
         return pd.DataFrame()
       
     df = carregar_dados(dados)
