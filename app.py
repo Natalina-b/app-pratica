@@ -22,21 +22,22 @@ with st.sidebar:
     )
 
 if dados:
-  def carregar_dados(dados):
-    try:
-      df = pd.read_excel(dados)
-      return df
-    except FileNotFaundErro:
-      return pd.DataFrame()
+    def carregar_dados(dados):
+      try:
+        df = pd.read_excel(dados)
+        return df
+    except FileNotFaundError:
+        return pd.DataFrame()
       
-      df = carregar_dados(dados)
-      st.table(df)
+    df = carregar_dados(dados)
+    st.table(df)
+      
 else:
     st.info("Carregue um ficheiro excel para começar")
-  
+ 
 if menu == "Inicio":
    with st.expander("**Sobre o Istituto Nacional de Estatística**"):
-      st.write("ACESSE O SITE WW.INE.CV")
+      st.write("ACESSE O SITE WWW.INE.CV")
       st.image("INE.png")
       
 if menu == "widgets":
