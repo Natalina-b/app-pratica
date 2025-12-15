@@ -1,6 +1,6 @@
 import streamlit as st
 from steamlit_option_menu import option_menu
-import numpy asnp
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import time
