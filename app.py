@@ -15,3 +15,25 @@ menu = option_menu(menu_title="Menu",
                  )
 with st.sidebar:
   st.sucess("**UPLOAD DE DADOS")
+dados = st.file_uploader(
+  "CAREGA O FICHEIRO",
+  type=["xlsx", "xls"]
+)
+if dados:
+  def carregar_dados(dados):
+    try:
+      df=df = pd.read_excel(dados)
+      return df
+    except FileNotFaundErro:
+      return pd.DataFrame()
+      df = carregar_dados(dados)
+      st.table(df)
+  else:
+      st.info("Carregue um ficheiro excel para começar")
+if menu== "Inicio":
+  with st.expander("** Sobre o Istituto Nacional de Estatística")
+      st.write("ACESSE O SITE WW.INE.CV")
+      st.image("INE.png")
+      
+if menu== "widgets":
+  bt=st.button("Dê um clique")
