@@ -32,8 +32,8 @@ else:
     st.info("Carregue um ficheiro excel para começar")
 if menu== "Inicio":
    with st.expander("** Sobre o Istituto Nacional de Estatística"):
-        st.write("ACESSE O SITE WW.INE.CV")
-        st.image("INE.png")
+      st.write("ACESSE O SITE WW.INE.CV")
+      st.image("INE.png")
       
 if menu == "widgets":
   bt = st.button("Dê um clique")
