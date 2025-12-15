@@ -41,6 +41,7 @@ if menu == "Inicio":
       
 if menu == "widgets":
   bt = st.button("Dê um clique")
+  
 if bt:
   st.info("Nova o ponto de slider!", min_value=25,\
            max_value=35, value=30, step=1
