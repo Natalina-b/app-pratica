@@ -35,14 +35,14 @@ else:
     st.info("Carregue um ficheiro excel para começar")
  
 if menu == "Inicio":
-   with st.expander("**Sobre o Istituto Nacional de Estatística**"):
-      st.write("ACESSE O SITE WWW.INE.CV")
-      st.image("Logo-1.png")
+  with st.expander("**Sobre o Istituto Nacional de Estatística**"):
+    st.write("ACESSE O SITE WWW.INE.CV")
+    st.image("Logo-1.png")
       
 if menu == "widgets":
   bt = st.button("Dê um clique")
-  if bt:
-    st.info("Nova o ponto de slider!", min_value=25,\
+if bt:
+  st.info("Nova o ponto de slider!", min_value=25,\
            max_value=35, value=30, step=1
            )
 
