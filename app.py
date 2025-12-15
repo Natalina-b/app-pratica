@@ -12,18 +12,19 @@ menu = option_menu(menu_title="Menu",
                  menu_icon="cast",
                  default_index=0,
                  orientation="horinzantal"
-
                  )
+
 with st.sidebar:
     st.success("**UPLOAD DE DADOS**")
-dados = st.file_uploader(
-  "CAREGA O FICHEIRO...",
-  type=["xlsx", "xls"]
+    dados = st.file_uploader(
+    "CAREGA O FICHEIRO...",
+    type=["xlsx", "xls"]
     )
+
 if dados:
   def carregar_dados(dados):
     try:
-      df=df = pd.read_excel(dados)
+      df = pd.read_excel(dados)
       return df
     except FileNotFaundErro:
       return pd.DataFrame()
