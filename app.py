@@ -9,7 +9,7 @@ menu= option_menu(menu_title="Menu",
                  options=["Inicio", "Gráfico", "Estatísticas", "Gráficos dinâmicos", "Widgets","Formulário"],
                  icons=["bar-chart", "bar-chart-line", "toogles", "bar-chart"],
                  menu_icon="cast",
-                 default_index=0
+                 default_index=0,
                  orientation="horinzantal"
 
                  )
